@@ -1,0 +1,19 @@
+@import '../../assets/styles/variables.scss';
+
+.paragraph_with_image {
+  width: 100%;
+}
+.img_class {
+  cursor: pointer;
+  max-width: 430px;
+  max-height: 400px;
+  box-shadow: $shadow_length $shadow_length $shadow_length $shadow_length $shadow_color;
+  // margin-right: 40px;
+  margin: 40px;
+}
+.img_class:hover {
+  scale: 1.1;
+}
+
+.left_image_float { float: left; }
+.right_image_float { float: right; }

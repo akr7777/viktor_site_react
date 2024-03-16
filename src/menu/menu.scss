@@ -1,0 +1,57 @@
+@import "./../assets/styles/variables.scss"; 
+
+.navigation_menu {
+    width: 100%;
+    // width: calc(100% - 40px);
+    // padding: 0 20px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: rgb(201, 37, 37);
+
+    @media screen and (min-width: 1000px) {
+      display: inline-flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px 0;
+      // padding-top: 20px;
+      // padding-bottom: 20px;
+    }
+    @media screen and (max-width: 999px) {
+        display: none;
+    //   display: flex;
+    //   flex-wrap: wrap;
+    //   justify-content: center;
+    //   align-items: center;
+    //   gap: 20px;
+    //   padding: 20px;
+    }
+}
+.one_field {
+    text-align: center;
+}
+  
+.nav_link {
+  color: white;
+  text-decoration: none;
+  font-family: $text-font-family;
+  font-size: 22px;
+  font-weight: bold;    
+}
+.nav_link:hover {
+  color: white;
+  scale:1.2;
+}
+  
+  @keyframes nav-keyframes {
+    0% {
+      color: black;
+    }
+    50% {
+      color: $menu-text-color;
+    }
+    100% {
+      color: black;
+    }
+  }
+  

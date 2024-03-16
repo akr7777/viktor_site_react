@@ -1,0 +1,79 @@
+@import '../../assets/styles/variables.scss';
+
+.materials_div {  
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .material_card {
+    height: 550px;
+    max-width: 200px;
+    display: grid;
+    grid-template-rows: 4fr 0.5fr 0.5fr 1fr;
+  
+    align-self: center;
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+  
+    border: $border-width solid $border-color;
+    box-shadow: $shadow_length $shadow_length $shadow_length $shadow_length $shadow_color;
+  
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    gap: 10px;
+  
+    img {
+      width: 200px;
+      height: 300px;
+      cursor: pointer;
+    }
+  
+  
+    h4 {
+      font-size: 20px;
+      font-weight: bold;
+      font-family: $text-font-family;
+      font-weight: $bold-font-merriweather;
+    }
+    h5 {
+      font-size: 16px;
+      font-family: $text-font-family;
+      font-weight: $bold-font-merriweather;
+    }
+    a {
+      button {
+        padding: 10px 20px 10px 20px;
+        background-color: grey;
+        border-radius: 5px;
+        font-size: calc($text_font_size - 3px);
+        cursor: pointer;
+        color: black;
+      }
+      color: black;
+    }
+  }
+  .material_card:hover {
+    scale: 1.1;
+  }
+  
+  @mixin m2_mixin($bgImage) {
+    background-image: $bgImage;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 300px;
+  }
+  .m1 { @include m2_mixin(url("../../assets/docs/4.png")); }
+  .m1:hover { background-image: url("../../assets/4c.png"); }
+  .m2 { @include m2_mixin(url("../../assets/docs/1.png")); }
+  .m2:hover { background-image: url("../../assets/docs/1c.png"); }
+  .m3 { @include m2_mixin(url("../../assets/docs/2.png")); }
+  .m3:hover { background-image: url("../../assets/docs/2c.png"); }
+  .m4 { @include m2_mixin(url("../../assets/docs/3.png")); }
+  .m4:hover { background-image: url("../../assets/docs/3c.png"); }
+  

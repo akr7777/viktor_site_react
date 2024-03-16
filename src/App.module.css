@@ -1,0 +1,7 @@
+.main_wrapped_div {
+    width: 100%;
+    min-height: 100svh;
+    background: url("./assets/images/background.png");
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
