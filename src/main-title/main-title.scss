@@ -116,6 +116,12 @@
   }
   
   .arrow_div {
+    @media screen and (min-width: $full_menu_screen_size) {
+      display: block;
+    }
+    @media screen and (max-width: $full_menu_screen_size) {
+      display: none;
+    }
     width: 100%;
     height: 100%;
   

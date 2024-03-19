@@ -1,0 +1,30 @@
+@import "./../assets/styles/variables.scss"; 
+
+.navigation_menu {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: rgb(201, 37, 37);
+
+    display: inline-flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 0;
+}
+.one_field {
+    text-align: center;
+}
+
+.nav_link_desctop {
+  color: white;
+  text-decoration: none;
+  font-family: $text-font-family;
+  font-size: 22px;
+  font-weight: bold;    
+}
+.nav_link_desctop:hover {
+color: white;
+scale:1.2;
+}
+  

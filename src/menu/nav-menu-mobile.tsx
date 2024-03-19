@@ -1,0 +1,40 @@
+import './nav-menu-mobile.scss'
+import menuImage from './../assets/icons/mobile-menu-icon.svg'
+import crossImage from './../assets/icons/cross.png'
+import { useState } from 'react'
+import { MENU_POINTS_LIST } from './menu-points'
+import {v4 as uuidv4} from 'uuid'
+
+const NavigationMenuMobile = () => {
+    const [isOpen, setIsOpen] = useState<boolean>(false);
+
+    return (
+        <>
+            {!isOpen && <div className='nav_menu_mobile_icon'>
+                <img alt='' src={menuImage} onClick={() => setIsOpen(true)}/>
+            </div>}
+
+            {isOpen && (
+                <div className='layout'>
+                    <div className='nav_menu_mobile_icon'>
+                        <img alt='' src={crossImage} onClick={() => setIsOpen(false)}/>
+                    </div>
+                    <div className='nav_menu_wrapper'>
+                        {MENU_POINTS_LIST.map(el => {
+                            return (
+                                <div className='nav_link_mobile' key={uuidv4()} onClick={() => setIsOpen(false)} >
+                                    <a 
+                                        href={el.link} 
+                                    >{el.title}</a>
+                                </div>
+                            )
+                            })}
+                    </div>
+                </div>
+            )}
+        </>
+        
+    )
+}
+
+export default NavigationMenuMobile

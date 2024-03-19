@@ -15,10 +15,6 @@ import photo41 from '../../assets/docs/3.png'
 import photo42 from '../../assets/docs/3c.png'
 
 export const ChapterFive_Materials = () => {
-  // const class1: string = 'm1'
-  // const class2: string = 'm1'
-  // const class3: string = 'm1'
-  // const class4: string = 'm1'
 
     return (
         <Chapter chapterTitle={"Материалы"} chapterId={CHAPTER_ID_NAMES.materials}>

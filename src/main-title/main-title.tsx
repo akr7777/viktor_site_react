@@ -10,9 +10,23 @@ import spiridon1 from '../assets/images/va1.png'
 import spiridon2 from '../assets/images/spiridonov.png'
 import { useState } from 'react'
 import { CHAPTER_ID_NAMES } from '../consts/chapter-id-names'
+import { useAppDispatch } from '../store/store'
+import { changeBigPhotoSrcAC } from '../store/appSlice'
+import { v4 as uuidv4 } from 'uuid'
+// import useScreenSize from '../store/useScreenSize-hook'
 
 const MainTitle = () => {
+  const dispatch = useAppDispatch()
   const [photoHero, setPhotoHero] = useState(spiridon1)
+  const photoCaruselList: Array<string> = [photo1, photo2, photo3, photo4, photo5]
+
+  // const screenSize = useScreenSize()
+  // console.log('screenSize=', screenSize);
+  
+
+  const onPhotoClickHandler = (imgSrc: string) => {
+    dispatch(changeBigPhotoSrcAC(imgSrc))
+  }
 
     return (
       <div className="first_div" id={CHAPTER_ID_NAMES.main_title}>
@@ -20,8 +34,8 @@ const MainTitle = () => {
         <div className="line1">
           <div className="square1">
             <p>Клуб<br/>"Спиридонов"</p>
-            <img className="img_club_logo" src={logoVA} onclick="openImage('overlay_logo')"></img>
-            <div className="overlay_logo" id="overlay_logo" onclick="closeImage('overlay_logo')"></div>
+            <img className="img_club_logo" src={logoVA} onClick={() => onPhotoClickHandler(logoVA)}></img>
+            {/* <div className="overlay_logo" id="overlay_logo" onclick="closeImage('overlay_logo')"></div> */}
 
           </div>
           <div className="square2">
@@ -29,6 +43,7 @@ const MainTitle = () => {
               className='square2_spiridon_photo'
               onMouseOver={() => setPhotoHero(spiridon2)}
               onMouseLeave={() => setPhotoHero(spiridon1)}
+              onClick={() => onPhotoClickHandler(spiridon2)}
             />
           </div>
         </div>
@@ -36,20 +51,13 @@ const MainTitle = () => {
         <div className="line2">
           <div className="line2_inside">
 
-            <img src={photo1} onclick="openImage('overlay_carusel_1')"/>
-            <div className="overlay_carusel_1" id="overlay_carusel_1" onclick="closeImage('overlay_carusel_1')"></div>
-
-            <img src={photo2} onclick="openImage('overlay_carusel_2')"/>
-            <div className="overlay_carusel_2" id="overlay_carusel_2" onclick="closeImage('overlay_carusel_2')"></div>
-
-            <img src={photo3} onclick="openImage('overlay_carusel_3')"/>
-            <div className="overlay_carusel_3" id="overlay_carusel_3" onclick="closeImage('overlay_carusel_3')"></div>
-
-            <img src={photo4} onclick="openImage('overlay_carusel_4')"/>
-            <div className="overlay_carusel_4" id="overlay_carusel_4" onclick="closeImage('overlay_carusel_4')"></div>
-
-            <img src={photo5} onclick="openImage('overlay_carusel_5')"/>
-            <div className="overlay_carusel_5" id="overlay_carusel_5" onclick="closeImage('overlay_carusel_5')"></div>
+            {
+              photoCaruselList.map(p => {
+                return (
+                  <img src={p} onClick={() => onPhotoClickHandler(p)} key={uuidv4()}/>
+                )
+              })
+            }
 
           </div>
         </div>
