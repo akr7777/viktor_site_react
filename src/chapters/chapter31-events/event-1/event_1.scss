@@ -1,0 +1,81 @@
+@import '../../../assets/styles/variables.scss';
+
+.our_events_adv_div {
+    @media screen and (min-width: 670px) {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: 20px;
+        margin-top: 30px;
+    }
+    @media screen and (max-width: 669px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.our_events_right_div {
+    @media screen and (min-width: 670px) {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: flex-start;
+        align-items: flex-end;
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            box-shadow: $small_shadow $small_shadow $small_shadow $small_shadow $shadow_color;
+        }
+    }
+    @media screen and (max-width: 669px) {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            margin: 0 7px;
+            box-shadow: $small_shadow $small_shadow $small_shadow $small_shadow $shadow_color;
+            // box-shadow: $shadow_length $shadow_length $shadow_length $shadow_length $shadow_color;
+        }
+    }
+}
+.our_events_text_image {
+    @media screen and (max-width: 669px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    img {
+        box-shadow: $small_shadow $small_shadow $small_shadow $small_shadow $shadow_color;
+    }
+}
+.event_1_photo_gallery {
+    display: inline-block;
+    text-align: center;
+    img {
+        margin-right: 15px;
+        box-shadow: $small_shadow $small_shadow $small_shadow $small_shadow $shadow_color;
+    }
+}
+.our_events_float_left { width: 250px; float: left; }
+.our_events_float_right {  width: 200px; float: right; }
+.img_1 {
+    width: 300px;
+    height: 200px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.img_2 {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.img_3 {
+    height: 200px;
+    cursor: pointer;
+    border-radius: 15px;
+    margin: 0 20px;
+}

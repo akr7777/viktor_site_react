@@ -1,0 +1,14 @@
+@import '../../../assets/styles/variables.scss';
+
+.event_3_photo_gallery {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    img {
+        margin-right: 15px;
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        box-shadow: $small_shadow $small_shadow $small_shadow $small_shadow $shadow_color;
+    }
+}

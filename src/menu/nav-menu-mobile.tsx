@@ -22,11 +22,11 @@ const NavigationMenuMobile = () => {
                     <div className='nav_menu_wrapper'>
                         {MENU_POINTS_LIST.map(el => {
                             return (
-                                <div className='nav_link_mobile' key={uuidv4()} onClick={() => setIsOpen(false)} >
-                                    <a 
-                                        href={el.link} 
-                                    >{el.title}</a>
-                                </div>
+                                <a href={el.link} key={uuidv4()} className='nav_link_mobile'>
+                                    <div onClick={() => setIsOpen(false)} >
+                                        {el.title}
+                                    </div>
+                                </a>
                             )
                             })}
                     </div>

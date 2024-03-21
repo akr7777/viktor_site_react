@@ -9,3 +9,5 @@ export const appInitContent: AppInitContentType = {
 }
 
 export const FULL_NAV_SCREEN_SIZE = 1000;
+
+export const DATE_TIME_FORMAT = "DD.MM.YYYY hh:mm"

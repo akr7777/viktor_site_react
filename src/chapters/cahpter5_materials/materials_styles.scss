@@ -8,8 +8,16 @@
     align-items: center;
   }
   .material_card {
-    height: 550px;
-    max-width: 200px;
+    @media screen and (min-width: 540px) {
+      max-width: 200px;
+      height: 550px;
+      gap: 10px;
+    }
+    @media screen and (max-width: 540px) {
+      width: 80%;
+      height: 450px;
+      gap: 5px;
+    }
     display: grid;
     grid-template-rows: 4fr 0.5fr 0.5fr 1fr;
   
@@ -24,7 +32,6 @@
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 25px;
-    gap: 10px;
   
     img {
       width: 200px;
@@ -38,6 +45,9 @@
       font-weight: bold;
       font-family: $text-font-family;
       font-weight: $bold-font-merriweather;
+      @media screen and (max-width: 540px) {
+        margin: 0;
+      }
     }
     h5 {
       font-size: 16px;
@@ -59,21 +69,4 @@
   .material_card:hover {
     scale: 1.1;
   }
-  
-  @mixin m2_mixin($bgImage) {
-    background-image: $bgImage;
-    background-position: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: 200px;
-    height: 300px;
-  }
-  .m1 { @include m2_mixin(url("../../assets/docs/4.png")); }
-  .m1:hover { background-image: url("../../assets/4c.png"); }
-  .m2 { @include m2_mixin(url("../../assets/docs/1.png")); }
-  .m2:hover { background-image: url("../../assets/docs/1c.png"); }
-  .m3 { @include m2_mixin(url("../../assets/docs/2.png")); }
-  .m3:hover { background-image: url("../../assets/docs/2c.png"); }
-  .m4 { @include m2_mixin(url("../../assets/docs/3.png")); }
-  .m4:hover { background-image: url("../../assets/docs/3c.png"); }
   

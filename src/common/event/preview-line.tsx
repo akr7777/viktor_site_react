@@ -1,5 +1,4 @@
 import dayjs, { Dayjs } from "dayjs";
-import { DATE_TIME_FORMAT } from "../../../../consts/events-info";
 import clsx from "clsx";
 
 import arrowDown from '../../../../assets/icons/arrow1.png'
@@ -7,8 +6,9 @@ import arrowUp from '../../../../assets/icons/arrow2.png'
 
 import './preview-line.scss'
 import { useSelector } from "react-redux";
-import { RootState, useAppDispatch } from "../../../../store/store";
-import { addOpenedEventIdAC, removeOpenedEventIdAC } from "../../../../store/appSlice";
+import { RootState, useAppDispatch } from "../../store/store";
+import { addOpenedEventIdAC, removeOpenedEventIdAC } from "../../store/appSlice";
+import { DATE_TIME_FORMAT } from "../../consts/store-consts";
 
 type PropsType = {
     id: number,

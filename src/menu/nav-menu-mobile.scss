@@ -2,6 +2,7 @@
     position: fixed;
     right: 20px;
     top: 20px;
+    z-index: 10;
 
     img {
         width: 50px;
@@ -38,8 +39,13 @@
     background-color: black;
     text-align: center;
 
-    a {
-        color: yellow;
-        font-size: 30px;
-    }
+    // a {
+    //     color: yellow;
+    //     font-size: 30px;
+    // }
+    color: yellow;
+    font-size: 30px;
+}
+.nav_link_mobile:hover {
+    color: red;
 }

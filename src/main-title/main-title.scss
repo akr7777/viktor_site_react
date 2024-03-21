@@ -97,9 +97,10 @@
       height: 200px;
       border: $border-width solid $border-color;
       box-shadow: $shadow_length $shadow_length $shadow_length $shadow_length $shadow_color;
+      border-radius: 5px;
     }
     img:hover {
-      scale: 1.2;
+      scale: 1.1;
     }
   }
   
