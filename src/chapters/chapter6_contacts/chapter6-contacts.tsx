@@ -1,14 +1,18 @@
-import './contacts.scss'
 import iconEmail from '../../assets/icons/icon-email.png'
 import iconYoutube from '../../assets/icons/icon-youtube.png'
 import iconPhone from '../../assets/icons/icon-phone.png'
 import iconTelegram from '../../assets/icons/icon-telegram.png'
 import iconVk from '../../assets/icons/icon-vk.png'
+import { Chapter } from '../../common/chapter/chapter'
+
+import './contacts.scss'
 
 export const ChapterSix_Contacts = () => {
     return (
-        <div className="chapter" id="contacts">
-        <center><h2>Наши контакты</h2></center>
+      <Chapter chapterTitle={'Наши контакты'} >
+        {/* <div className="chapter" id="contacts"> */}
+        <div id="contacts">
+        {/* <center><h2>Наши контакты</h2></center> */}
         <div className="contacts_div">
 
           <div className="contact_card">
@@ -56,5 +60,6 @@ export const ChapterSix_Contacts = () => {
         </div>
 
       </div>
+      </Chapter>
     )
 }
