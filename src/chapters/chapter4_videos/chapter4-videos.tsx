@@ -12,6 +12,9 @@ export const ChapterFour_Videos = () => {
             <div className="iframe_div">
                 <iframe src="https://www.youtube.com/embed/lir2HguvXq0?si=p_J3ay3a4kxd9uIU" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
             </div>
+            <div className="iframe_div">
+            <iframe src="https://www.youtube.com/embed/gzbP-GwLusY?si=o8JFyasJhc444lGB" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            </div>
             <div className="others_video_div">
                 <div className="centrDiv">
                     <iframe className="one_other_video_div" src="https://www.youtube-nocookie.com/embed/lo8kj71nSi0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
