@@ -1,9 +1,12 @@
-import './nav-menu-mobile.scss'
-import menuImage from './../assets/icons/mobile-menu-icon.svg'
-import crossImage from './../assets/icons/cross.png'
 import { useState } from 'react'
 import { MENU_POINTS_LIST } from './menu-points'
 import {v4 as uuidv4} from 'uuid'
+
+import menuImage from './../assets/icons/mobile-menu-icon.svg'
+// import crossImage from './../assets/icons/cross.png'
+import crossImage from './../assets/icons/cross_2.png'
+
+import './nav-menu-mobile.scss'
 
 const NavigationMenuMobile = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false);

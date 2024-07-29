@@ -35,17 +35,19 @@
     padding: 10px;
     border: 1px solid yellow;
     border-radius: 10px;
-    width: 80%;
+    width: 90%;
+    // background-color: rgb(207, 201, 201);
     background-color: black;
     text-align: center;
 
+    text-decoration: none;
     // a {
     //     color: yellow;
     //     font-size: 30px;
     // }
     color: yellow;
-    font-size: 30px;
+    font-size: 26px;
 }
 .nav_link_mobile:hover {
-    color: red;
+    color: yellow;
 }

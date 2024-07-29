@@ -1,5 +1,11 @@
 @import '../../assets/styles/variables.scss';
 
+.contacts_bg {
+  background-color: $site_bg_color_2;
+  // filter: grayscale(100%);
+
+}
+
 .contacts_div {
     display: flex;
     flex-direction: column;
@@ -30,6 +36,7 @@
     img {
         width: 50px;
         height: 50px;
+        vertical-align: middle;
     }
     }
     // img {
@@ -38,3 +45,8 @@
     // }
   }
   
+  .contacts-donations {
+    text-align: center;
+    margin: 20px 0;
+    line-height: 2;
+  }

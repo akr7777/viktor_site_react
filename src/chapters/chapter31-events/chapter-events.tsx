@@ -5,13 +5,21 @@ import Event_2 from "./event-2/event-2"
 import Event_3 from "./event-3/event-3"
 import Event_4 from "./event-4/event-4"
 
+import './events-classes.scss'
+
 const OurEvents = () => {
-    return <Chapter chapterTitle={"Наши мероприятия"} chapterId={CHAPTER_ID_NAMES.our_events}>
-        <Event_1 />
-        <Event_2 />
-        <Event_3 />
-        <Event_4 />
-    </Chapter>
+    return (
+        <Chapter 
+            chapterTitle={"Наши мероприятия"} 
+            chapterId={CHAPTER_ID_NAMES.our_events}
+            addClass="our_events_wrapper"
+        >
+            <Event_1 />
+            <Event_2 />
+            <Event_3 />
+            <Event_4 />
+        </Chapter>
+    )
 }
 
 export default OurEvents

@@ -1,0 +1,35 @@
+@import '../../assets//styles/variables.scss';
+
+.chapter3_wrapper {
+    // background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgb(211, 243, 201) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, $site_bg_color_2 15%);
+    // filter: grayscale(100%);
+
+}
+
+.chapter3_right_img {
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+    img {
+        cursor: pointer;
+        // max-width: 30%;
+        min-width: 300px;
+        box-shadow: $shadow_length $shadow_length $shadow_length $shadow_length $shadow_color;
+        border-radius: 5px;
+    }
+}
+
+.chapter3_right_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+// .chapter3_left_div {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: flex-end;
+// }

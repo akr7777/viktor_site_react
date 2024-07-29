@@ -14,10 +14,16 @@ import photo32 from '../../assets/docs/2c.png'
 import photo41 from '../../assets/docs/3.png'
 import photo42 from '../../assets/docs/3c.png'
 
+import './materials_styles.scss'
+
 export const ChapterFive_Materials = () => {
 
     return (
-        <Chapter chapterTitle={"Материалы"} chapterId={CHAPTER_ID_NAMES.materials}>
+        <Chapter
+          chapterTitle={"Материалы"}
+          chapterId={CHAPTER_ID_NAMES.materials}
+          addClass="materials_bg"
+        >
              <div className="materials_div">
 
                 <MaterialCard 

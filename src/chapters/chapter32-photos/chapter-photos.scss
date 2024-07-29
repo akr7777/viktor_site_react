@@ -1,0 +1,52 @@
+@import '../../assets/styles/variables.scss';
+
+.chapter-photo-bg {
+    background-color: $site_bg_color_2;
+    // filter: grayscale(100%);
+
+}
+
+.chapter-photos-div {
+    display: inline-block;
+    text-align: center;
+}
+
+.chapter-photo-art {
+    border: 1px solid $border-color;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.chapter-photo-div {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.chapter-photo-title {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.chapter-photos-img-class {
+    max-width: 250px;
+    max-height: 250px;
+    margin: 5px 5px;
+
+    cursor: pointer;
+    vertical-align: middle;
+
+    border-radius: 10px;
+}
+.contacts-donations-line {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,16 +1,17 @@
 import { PropsWithChildren } from 'react'
 import dayjs, { Dayjs } from "dayjs";
 import clsx from "clsx";
+import { useSelector } from "react-redux";
+import { RootState, useAppDispatch } from "../../store/store";
+import { addOpenedEventIdAC, removeOpenedEventIdAC } from "../../store/appSlice";
+import { ANIMATION_TIME, DATE_TIME_FORMAT } from '../../consts/store-consts';
+import { AnimatePresence, motion } from 'framer-motion';
 
 import arrowDown from '../../assets/icons/arrow1.png'
 import arrowUp from '../../assets/icons/arrow2.png'
 
-import { useSelector } from "react-redux";
-import { RootState, useAppDispatch } from "../../store/store";
-import { addOpenedEventIdAC, removeOpenedEventIdAC } from "../../store/appSlice";
-
 import './event-classes.scss'
-import { DATE_TIME_FORMAT } from '../../consts/store-consts';
+import '../../assets/styles/arrowClass.scss'
 
 type PropsType = {
     id: number
@@ -26,7 +27,7 @@ const EventWrapperComponent = (props: PropsWithChildren<PropsType>) => {
     const dateDiff: number = date.diff(now)
 
     const dateClass: string = clsx(
-        'one_field',
+        'one_event_one_field',
         dateDiff <= 0 ? 'date_preview_black' : 'date_preview_red'
     )
 
@@ -44,17 +45,17 @@ const EventWrapperComponent = (props: PropsWithChildren<PropsType>) => {
             {/* Preview line > */}
             <div className="preview_line">
                 <div className={dateClass}>
-                    <h3>{date.format(DATE_TIME_FORMAT)}</h3>
+                    {date.format(DATE_TIME_FORMAT)}
                 </div>
-                <div className="one_field">
-                    <h3>{props.previewTitle}</h3>
+                <div className="one_event_one_field">
+                    {props.previewTitle}
                 </div>
                 {
                     isOpened
-                        ? <div className="one_field">
+                        ? <div className="one_event_one_field">
                             <img src={arrowUp} alt="" className="arrow_img" onClick={onArrowUpClickHandler}/>
                         </div>
-                        : <div className="one_field">
+                        : <div className="one_event_one_field">
                             <img src={arrowDown} alt="" className="arrow_img" onClick={onArrowDownClickHandler}/>
                         </div>
                 }
@@ -62,9 +63,21 @@ const EventWrapperComponent = (props: PropsWithChildren<PropsType>) => {
             </div>
             {/* < Preview line */}
 
-            {
-                isOpened && props.children
-            }
+            <AnimatePresence>
+                { 
+                    isOpened && 
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{
+                                duration: ANIMATION_TIME.long
+                            }}
+                            exit={{ opacity: 0 }}
+                        >
+                            {props.children}
+                        </motion.div> 
+                }
+            </AnimatePresence>
 
         </div>
     )

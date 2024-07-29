@@ -1,9 +1,9 @@
 //@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=IM+Fell+DW+Pica+SC&family=IM+Fell+English+SC&family=Special+Elite&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alice&family=Averia+Serif+Libre:wght@300&family=Brygada+1918&family=Comfortaa&family=EB+Garamond&family=Merriweather:wght@300&family=Old+Standard+TT&display=swap');
 
-$border-color: white;
+$border-color: rgb(197, 195, 195);
 $border-color-photo: red;
-$border-width: 3px;
+$border-width: 1px;
 
 $text_font_size: 20px;
 // $event_font_size: 18px;
@@ -11,9 +11,9 @@ $chapter_title_font_size: 30px;
 $text_color: black;
 $text_margin_top: 20px;
 
-$shadow_color: gray;
-$shadow_length: 5px;
-$small_shadow: 2.5px;
+$shadow_color: rgb(209, 205, 205);
+$shadow_length: 2.5px;
+$small_shadow: 1.25px;
 
 $menu-bgColor: #D0D0D0;
 $menu-text-color: #7A2B2B;
@@ -23,3 +23,9 @@ $text-font-family: 'Merriweather', serif;
 $bold-font-merriweather: 400;
 
 $full_menu_screen_size: 1000px;
+
+// $site_bg_color_2: rgb(225,254,215); //green colored
+// $site_bg_color_2: rgb(236, 246, 232); //green slightly
+// $site_bg_color_2: rgb(210, 231, 249); //blue
+$site_bg_color_2: rgb(227, 223, 223); //grey
+// $site_bg_color_2: rgb(237, 215, 211); //red

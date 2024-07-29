@@ -1,17 +1,22 @@
 import { PropsWithChildren } from "react"
 import { motion } from "framer-motion"
+import { ANIMATION_TIME } from "../../consts/store-consts"
+import clsx from "clsx"
 
 import './chapter.scss'
-import { ANIMATION_TIME } from "../../consts/store-consts"
 
 type PropsType = {
     chapterTitle: string
     chapterId?: string
+    addClass?: string
 }
 
 export const Chapter = (props: PropsWithChildren<PropsType>) => {
     return (
-        <div className='chapter' id={props.chapterId}>
+        <div 
+            className={clsx('chapter', props.addClass && props.addClass)}
+            id={props.chapterId}
+        >
             <center>
                 <motion.h2
                     initial={{ x: -30, opacity: 0 }}

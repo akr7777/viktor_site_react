@@ -6,6 +6,7 @@ export const CHAPTER_ID_NAMES = {
     our_activity: 'our_activity',
     our_events: 'our_events',
     video: 'video',
+    photos: 'photos',
     materials: 'materials',
     contacts: 'contacts'
 }
