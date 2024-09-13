@@ -12,6 +12,8 @@ export const ChapterFour_Videos = () => {
         "https://www.youtube.com/embed/lir2HguvXq0?si=p_J3ay3a4kxd9uIU",
         "https://www.youtube.com/embed/gzbP-GwLusY?si=o8JFyasJhc444lGB",
         "https://www.youtube.com/embed/PGe_YY-3sXI?si=8lk1glXQsdjLqNDt",
+        "https://www.youtube.com/embed/PKUgK7UhIOc?si=chmbStB8B7gFAhbg",
+        "https://www.youtube.com/embed/7QUW4WcnZ7Q?si=sqkTw7e_k7HjaHkU", 
     ]
 
     const secondArr: Array<string> = [

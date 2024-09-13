@@ -3,11 +3,6 @@
 .paragraph_with_image {
   margin-top: $text_margin_top;
 
-  // background-color: green;
-  // vertical-align: middle;
-  // padding-top: auto;
-  // padding-bottom: auto;
-
   @media screen and (max-width: 650px) {
     display: flex;
     flex-direction: column;
@@ -16,10 +11,8 @@
   }
   width: 100%;
   p {
-    // margin-top: $text_margin_top;
     vertical-align: middle;
     height: 100%;
-    // background-color: yellow;
   }
 }
 .img_class {

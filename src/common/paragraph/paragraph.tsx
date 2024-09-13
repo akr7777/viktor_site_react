@@ -3,6 +3,7 @@ import clsx from 'clsx'
 import { useAppDispatch } from "../../store/store"
 import { changeBigPhotoSrcAC } from "../../store/appSlice"
 import { v4 as uuidv4 } from 'uuid'
+import React from "react"
 
 import './paragraph.scss'
 

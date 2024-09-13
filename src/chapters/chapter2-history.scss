@@ -1,0 +1,28 @@
+.chapter_2_history_video_div {
+    @media screen and (max-width: 650px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+}
+.chapter_2_history_classes_p {
+    // min-width: 300px;
+    // max-width: 30%;
+    @media screen and (min-width: 650px) {
+        float: right;
+        margin-left: 40px;
+    }
+    //   width: 100%;
+    //   p {
+    //     vertical-align: middle;
+    //     height: 100%;
+    //   }
+}
+
+.chapter_2_history_classes_video {
+    min-width: 400px;
+    height: 300px;
+    max-width: 30%;
+    border-radius: 10px;
+}
