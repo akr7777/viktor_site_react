@@ -13,10 +13,11 @@ export const ChapterFour_Videos = () => {
         "https://www.youtube.com/embed/gzbP-GwLusY?si=o8JFyasJhc444lGB",
         "https://www.youtube.com/embed/PGe_YY-3sXI?si=8lk1glXQsdjLqNDt",
         "https://www.youtube.com/embed/PKUgK7UhIOc?si=chmbStB8B7gFAhbg",
-        "https://www.youtube.com/embed/7QUW4WcnZ7Q?si=sqkTw7e_k7HjaHkU", 
     ]
 
     const secondArr: Array<string> = [
+        "https://www.youtube.com/embed/7QUW4WcnZ7Q?si=sqkTw7e_k7HjaHkU", 
+        "https://www.youtube.com/embed/wqTpKzpS7Bc?si=jCMsX4Byqh1dZDom",
         "https://www.youtube-nocookie.com/embed/lo8kj71nSi0",
         "https://www.youtube-nocookie.com/embed/IgdjYRbpZto",
         "https://www.youtube-nocookie.com/embed/l7sHfd1C4ys",
