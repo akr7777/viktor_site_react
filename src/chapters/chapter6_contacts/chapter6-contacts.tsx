@@ -142,18 +142,9 @@ const ChapterSix_Contacts = () => {
         </div>
 
         <div className='contacts-donations-line'>
-          <label>1. Тинькофф:</label>
-          <b>2200 7009 1470 6113</b>
-          <CopyToClipboard text={'2200 7009 1470 6113'} onCopy={onCopyText}>
-            <img alt='' src={copyIcon} />
-          </CopyToClipboard>
-        </div>
-        
-        <div className='contacts-donations-line'>
-          <label>2. Сбербанк:</label>
-          <b>2202 2053 7987 8249</b>
-
-          <CopyToClipboard text={'2202 2053 7987 8249'} onCopy={onCopyText}>
+          <label>Тинькофф:</label>
+          <b>5536 9140 4560 9488</b>
+          <CopyToClipboard text={'5536914045609488'} onCopy={onCopyText}>
             <img alt='' src={copyIcon} />
           </CopyToClipboard>
         </div>
